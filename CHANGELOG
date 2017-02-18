@@ -1,0 +1,10 @@
+0.1:
+First release
+
+0.2:
+Changed where the templates are stored.
+
+0.3:
+Added functions for alot of things.
+Added a call to xbps-install on the end of --install.
+Added a changelog.
