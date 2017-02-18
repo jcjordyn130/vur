@@ -3,7 +3,7 @@
 # Licensed under the MIT License.
 # Define the name and version
 name = "a vur helper"
-version = "0.1"
+version = "0.2"
 # Imports
 import os
 import sys
@@ -18,7 +18,7 @@ config = configparser.ConfigParser(interpolation=None)
 config.read(configfile)
 
 # Start getting the config values
-server = config.get('main', 'server', fallback="https://server.jordynsblog.tk/void-templates")
+server = config.get('main', 'server', fallback="https://github.com/jcjordyn130/vur-templates/raw/master")
 storagedir = config.get('main', 'storagedir', fallback=os.environ['HOME'] + "/.cache/vur/")
 
 # Go into the storage dir
