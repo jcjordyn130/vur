@@ -57,13 +57,13 @@ def bootstrap():
 if args.firsttime:
 	# If the storagedir doesn't exist, create it.
 	if not os.path.exists(storagedir):
-	        print ("Making the storage directory (%s)..." % storagedir)
+		print ("Making the storage directory (%s)..." % storagedir)
 		os.makedirs(storagedir)
 	print ("Fetching the void-packages repo...")
 	# Clone the git repo here.
 	subprocess.call(["git", "clone", "https://github.com/voidlinux/void-packages.git", storagedir])
 	# Lets bootstrap!
-        bootstrap()
+	bootstrap()
 
 if args.bootstrap:	
 	bootstrap()
